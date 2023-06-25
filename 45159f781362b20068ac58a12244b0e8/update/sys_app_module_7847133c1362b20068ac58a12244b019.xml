@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Chuck Norris">911553b81362b20068ac58a12244b009</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Quotes</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_chuck_quote</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_snc_chuck.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2017-05-03 12:15:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7847133c1362b20068ac58a12244b019</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Quotes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Chuck Norris" source="x_snc_chuck">45159f781362b20068ac58a12244b0e8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Chuck Norris">45159f781362b20068ac58a12244b0e8</sys_scope>
+        <sys_update_name>sys_app_module_7847133c1362b20068ac58a12244b019</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2017-05-03 12:15:36</sys_updated_on>
+        <timeline_page/>
+        <title>Quotes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

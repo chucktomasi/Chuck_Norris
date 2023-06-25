@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_chuck.Utils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Utils</name>
+        <script><![CDATA[var Utils = Class.create();
+Utils.prototype = {
+	initialize: function() {
+		this.quoteTable = 'x_snc_chuck_quote';
+	},
+
+	_restCall : function() {
+		try { 
+			var r = new sn_ws.RESTMessageV2('x_snc_chuck.Chuck', 'get');
+
+			var response = r.execute();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			gs.info('responseBody=' + responseBody);
+			if (httpStatus == "200") {
+				var jokeObj = JSON.parse(responseBody.replace(/&quot;/g,'"'));
+				
+				return jokeObj.value;
+			}
+			
+			return;
+		}
+		catch(ex) {
+			var message = ex.getMessage();
+		}	
+	},
+	
+	getQuote : function() {
+	
+		var quote = this._restCall();
+		
+		if (!quote) {
+			return;
+		}
+		
+		var quoteGR = this.quoteExists(quote.id);
+		
+		if (!quoteGR) {
+			this.createQuote(quote);
+		} else {
+			this.updateQuote(quoteGR);
+		}
+		
+		return quote;
+	},
+	
+	createQuote : function(quoteObj) {
+		
+		var quote = new GlideRecord(this.quoteTable);
+		
+		quote.newRecord();
+		quote.id = quoteObj.id;
+		quote.joke = quoteObj.joke;
+		quote.insert();
+	},
+	
+	updateQuote : function(quoteGR) {
+		
+		var count = parseInt(quoteGR.getValue('count'), 10);
+		
+		++count;
+		quoteGR.count = count;
+		quoteGR.update();
+		
+	},
+	
+	quoteExists : function(id) {
+
+		var quote = new GlideRecord(this.quoteTable);
+		
+		if (quote.get('id', id)) {
+			return quote;
+		}
+		
+		return;
+		
+	},
+
+	type: 'Utils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2017-05-03 12:25:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8df69ff81362b20068ac58a12244b041</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Utils</sys_name>
+        <sys_package display_value="Chuck Norris" source="x_snc_chuck">45159f781362b20068ac58a12244b0e8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Chuck Norris">45159f781362b20068ac58a12244b0e8</sys_scope>
+        <sys_update_name>sys_script_include_8df69ff81362b20068ac58a12244b041</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2017-05-05 14:27:26</sys_updated_on>
+    </sys_script_include>
+</record_update>

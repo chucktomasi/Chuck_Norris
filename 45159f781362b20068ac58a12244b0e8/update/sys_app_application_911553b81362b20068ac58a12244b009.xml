@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Chuck Norris</name>
+        <order/>
+        <roles>x_snc_chuck.user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2017-05-03 12:06:04</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>911553b81362b20068ac58a12244b009</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Chuck Norris</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Chuck Norris" source="x_snc_chuck">45159f781362b20068ac58a12244b0e8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Chuck Norris">45159f781362b20068ac58a12244b0e8</sys_scope>
+        <sys_update_name>sys_app_application_911553b81362b20068ac58a12244b009</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2017-05-03 12:06:06</sys_updated_on>
+        <title>Chuck Norris</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="joke" label="Joke" language="en" table="x_snc_chuck_quote">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>joke</element>
+            <help/>
+            <hint/>
+            <label>Joke</label>
+            <language>en</language>
+            <name>x_snc_chuck_quote</name>
+            <plural>Jokes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2017-05-03 12:15:37</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Joke</sys_name>
+            <sys_package display_value="Chuck Norris" source="x_snc_chuck">45159f781362b20068ac58a12244b0e8</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Chuck Norris">45159f781362b20068ac58a12244b0e8</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_chuck_quote_joke_en</sys_update_name>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2017-05-03 12:15:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ab179ff81362b20068ac58a12244b0a1" label="Quote" max_length="40" name="x_snc_chuck_quote" type="collection">
+        <element default="1" label="Count" max_length="40" name="count" type="integer"/>
+        <element label="ID" max_length="40" name="id" type="integer"/>
+        <element attributes="no_truncate=true" display="true" label="Joke" max_length="1000" name="joke" type="string"/>
+    </element>
+</database>
